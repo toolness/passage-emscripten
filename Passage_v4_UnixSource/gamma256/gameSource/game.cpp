@@ -12,6 +12,7 @@
 #include <stdlib.h>
 #include <time.h>
 #include <unistd.h>
+#include <emscripten.h>
 
 
 // for memcpy
@@ -22,7 +23,7 @@
 #include <SDL/SDL_main.h>
 
 // must do this before SDL include to prevent WinMain linker errors on win32
-int mainFunction( int inArgCount, char **inArgs );
+extern "C" int mainFunction( int inArgCount, char **inArgs );
 
 int main( int inArgCount, char **inArgs ) {
     return mainFunction( inArgCount, inArgs );
@@ -118,7 +119,7 @@ void catch_int(int sig_num) {
 
 char getKeyDown( int inKeyCode ) {
     SDL_PumpEvents();
-	Uint8 *keys = SDL_GetKeyState( NULL );
+	Uint8 *keys = SDL_GetKeyboardState( NULL );
 	return keys[ inKeyCode ] == SDL_PRESSED;
     }
 
@@ -169,14 +170,12 @@ char getJoyPushed( Uint8 inHatPosition ) {
         
     }
 
-
-
 // returns true if hit, returns false if user quits before hitting
-char waitForKeyOrButton() {
+extern "C" char waitForKeyOrButton() {
     SDL_Event event;
     
     while( true ) {
-        while( SDL_WaitEvent( &event ) ) {
+        while( SDL_PollEvent( &event ) ) {
             switch( event.type ) {
                 case SDL_JOYHATMOTION:
                 case SDL_JOYBUTTONDOWN:
@@ -196,6 +195,7 @@ char waitForKeyOrButton() {
         }
     
     
+    emscripten_sleep(30);
     return false;
     }
 
@@ -261,23 +261,23 @@ void flipGameImageOntoScreen( SDL_Surface *inScreen ) {
         // flip onto screen an additional time.
         // This will cause us to black-out the background in both buffers.
 
-        lockScreen( inScreen );
 	
 	// when blow-up factor changes:
 	// clear screen to prepare for next draw, 
 	// which will be bigger or smaller
 	SDL_FillRect( inScreen, NULL, 0x00000000 );
         
+        lockScreen( inScreen );
 	blowupOntoScreen( gameImage, 
 			  width, totalImageHeight, blowUpFactor, inScreen );
     
 	flipScreen( inScreen );
         }
 
-    lockScreen( inScreen );
     if( blowUpChanged ) {
         SDL_FillRect( inScreen, NULL, 0x00000000 );
         }
+    lockScreen( inScreen );
     blowupOntoScreen( gameImage, 
 		      width, totalImageHeight, blowUpFactor, inScreen );
     
@@ -298,7 +298,7 @@ SDL_Surface *screen = NULL;
 
 // play a complete game, from title screen to end, on screen
 // returns false if player quits
-char playGame();
+extern "C" char playGame();
 
 
 
@@ -336,7 +336,7 @@ void createScreen() {
 
 
 
-int mainFunction( int inArgCount, char **inArgs ) {
+extern "C" int mainFunction( int inArgCount, char **inArgs ) {
 
     // let catch_int handle interrupt (^c)
     signal( SIGINT, catch_int );
@@ -499,7 +499,7 @@ int mainFunction( int inArgCount, char **inArgs ) {
 */
 
 
-char playGame() {
+extern "C" char playGame() {
         
 
     int currentSpriteIndex = 2;
@@ -704,6 +704,7 @@ char playGame() {
 
 
     while( !done ) {
+        emscripten_sleep(30);
         
         if( getKeyDown( SDLK_s ) ) {
             stepDX = false;
