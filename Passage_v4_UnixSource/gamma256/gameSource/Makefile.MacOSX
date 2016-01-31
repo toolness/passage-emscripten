@@ -1,0 +1,12 @@
+PLATFORM_PATH = linux
+PLATFORM_NAME = Linux
+TIME_PLATFORM_PATH = unix
+TIME_PLATFORM_NAME = Unix
+
+
+PLATFORM_COMPILE_FLAGS = -DBSD -D__mac__
+
+
+# need to compile and link SDLMain.m
+PLATFORM_LINK_FLAGS =  -framework SDL -framework Cocoa mac/SDLMain.m
+

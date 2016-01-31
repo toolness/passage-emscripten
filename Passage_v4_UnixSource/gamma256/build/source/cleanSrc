@@ -1,0 +1,14 @@
+rm -r minorGems/ai
+rm -r minorGems/bench
+rm -r minorGems/doc
+rm -r minorGems/examples
+rm -r minorGems/sound
+rm -r minorGems/temp
+rm -r minorGems/graphics/openGL
+rm -r minorGems/network
+rm -r minorGems/math
+
+
+
+rm -r gamma256/documentation/concept
+rm -r gamma256/documentation/html

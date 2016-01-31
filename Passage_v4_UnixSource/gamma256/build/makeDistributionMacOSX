@@ -1,0 +1,55 @@
+#!/bin/sh
+
+#
+# Modification History
+#
+# 2007-November-12   Jason Rohrer
+# Copied from Cultivation build.
+#
+
+
+if [ $# -lt 3 ] ; then
+   echo "Usage: $0 release_name unix_platform_name path_to_SDL.framework"
+   exit 1
+fi
+
+
+rm -rf mac
+
+mkdir mac
+
+mkdir mac/Passage
+mkdir mac/Passage/graphics
+mkdir mac/Passage/music
+mkdir mac/Passage/settings
+
+cp ../documentation/Readme.txt mac/Passage/
+
+cp ../gameSource/graphics/*.tga mac/Passage/graphics
+cp ../gameSource/music/*.tga mac/Passage/music
+cp ../gameSource/settings/*.ini mac/Passage/settings
+
+
+
+
+cp -r macOSX/Passage.app mac/Passage/Passage.app
+cp ../gameSource/Passage mac/Passage/Passage.app/Contents/MacOS
+
+rm -r mac/Passage/Passage.app/CVS
+rm -r mac/Passage/Passage.app/Contents/CVS
+rm -r mac/Passage/Passage.app/Contents/MacOS/CVS
+rm -r mac/Passage/Passage.app/Contents/Resources/CVS
+rm -r mac/Passage/Passage.app/Contents/Frameworks/CVS
+
+# install SDL framework
+cp -r $3 mac/Passage/Passage.app/Contents/Frameworks/
+
+cd mac
+tar cf "Passage_$1_$2.tar" Passage
+gzip "Passage_$1_$2.tar"
+
+
+
+
+
+

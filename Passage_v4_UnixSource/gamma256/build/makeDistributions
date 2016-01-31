@@ -1,0 +1,56 @@
+#!/bin/sh
+
+#
+# Modification History
+#
+# 2007-November-12   Jason Rohrer
+# Copied from Cultivation build.
+#
+
+
+if [ $# -lt 2 ] ; then
+   echo "Usage: $0 release_name unix_platform_name"
+   exit 1
+fi
+
+
+rm -rf unix
+rm -rf windows
+
+mkdir windows
+mkdir unix
+
+
+# work on unix tree first
+mkdir unix/Passage
+mkdir unix/Passage/graphics
+mkdir unix/Passage/music
+mkdir unix/Passage/settings
+
+cp ../documentation/Readme.txt unix/Passage/
+
+cp ../gameSource/graphics/*.tga unix/Passage/graphics
+cp ../gameSource/music/*.tga unix/Passage/music
+cp ../gameSource/settings/*.ini unix/Passage/settings
+
+
+# duplicate unix tree so far to make windows tree
+cp -r unix/Passage windows/
+
+cp ../gameSource/Passage unix/Passage/
+
+cp win32/Passage.exe win32/*.dll windows/Passage/
+
+cd unix
+tar cf "Passage_$1_$2.tar" Passage
+gzip "Passage_$1_$2.tar"
+
+
+
+cd ../windows
+zip -r "Passage_$1_Windows.zip" Passage
+
+
+
+
+

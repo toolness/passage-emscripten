@@ -1,0 +1,10 @@
+PLATFORM_PATH = win32
+PLATFORM_NAME = Win32
+TIME_PLATFORM_PATH = win32
+TIME_PLATFORM_NAME = Win32
+
+PLATFORM_COMPILE_FLAGS =
+
+# -mwindows hides the command window on app launch
+PLATFORM_LINK_FLAGS = -lmingw32 -lSDLmain -lSDL -mwindows
+

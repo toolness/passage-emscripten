@@ -1,0 +1,39 @@
+#!/bin/bash
+
+#
+# Modification History
+#
+# 2007-November-12    Jason Rohrer
+# Copied from Cultivation.
+#
+
+
+cd gamma256/gameSource
+chmod u+x ./configure
+./configure
+
+
+
+echo "Building Passage..."
+
+make
+
+
+
+cd ../..
+
+mkdir graphics
+mkdir music
+mkdir settings
+
+cp gamma256/gameSource/Passage ./Passage
+cp gamma256/documentation/Readme.txt .
+cp gamma256/gameSource/graphics/* ./graphics
+cp gamma256/gameSource/music/* ./music
+cp gamma256/gameSource/settings/* ./settings
+
+echo "Run Passage to play."
+
+
+
+

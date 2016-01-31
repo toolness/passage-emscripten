@@ -1,0 +1,2 @@
+cvs -z3 -d:ext:jcr13@minorgems.cvs.sourceforge.net:/cvsroot/minorgems export -r HEAD minorGems
+cvs -z3 -d:ext:jcr13@hcsoftware.cvs.sourceforge.net:/cvsroot/hcsoftware export -r HEAD gamma256

@@ -1,0 +1,56 @@
+Version 4    2010-May-24
+
+--Fixed error in application of patch for older SDL versions.
+
+--Fixed random number generation so that it works on 64-bit platforms (thanks
+  to Kevin Fan).
+
+--Fixed chest gem selection behavior on certain platforms (like iPhone).
+
+--Fixed unsafe use of pointers into vector (triggered a bug with new shorter
+  default vector size).
+
+--Fixed string warnings that are caught by certain GCC versions.
+
+
+
+
+Version 3    2007-December-13
+
+--Switched to analog stick on 360 controller for much smoother play.
+
+--Added patch for older SDL versions provided by Jarno van der Kolk.
+
+--Added ESC in addition to Q to quit.
+
+--Added settings files for controlling screen size and fullscreen mode.
+
+
+
+Version 2    2007-November-13
+
+--Added chiptune music soundtrack.
+
+--Improved star sprite.
+
+--Fixed bug with window sizing (manifested by title being set too low).
+
+--Improved behavior of screen blow-up/blow-down keys.
+
+--Fixed bug in game reset that can result in artifacts during subsequent plays.
+
+--Fixed artifacts after screen blow-up factor change on double-buffered 
+  platforms.
+
+--Fixed problem with screen pitch.
+
+--Now builds for MacOSX 10.2 and higher (using MinGW and SDL).
+
+--Unix source distribution now available (compiles against SDL developer 
+  library).
+
+
+
+Version 1    2007-November-1
+
+--Initial release (Gamma256 submission)

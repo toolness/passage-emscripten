@@ -1,0 +1,468 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 45;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1D60589B0D05DD56006BFB54 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; };
+		1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D30AB110D05D00D00671497 /* Foundation.framework */; };
+		1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DF5F4DF0D08C38300B7A737 /* UIKit.framework */; };
+		DA12F3060EF6E70100A40C6D /* title.tga in Resources */ = {isa = PBXBuildFile; fileRef = DA12F2FC0EF6E70100A40C6D /* title.tga */; };
+		DA12F3070EF6E70100A40C6D /* heart.tga in Resources */ = {isa = PBXBuildFile; fileRef = DA12F2FD0EF6E70100A40C6D /* heart.tga */; };
+		DA12F3080EF6E70100A40C6D /* numerals.tga in Resources */ = {isa = PBXBuildFile; fileRef = DA12F2FE0EF6E70100A40C6D /* numerals.tga */; };
+		DA12F3090EF6E70100A40C6D /* spouseSprite.tga in Resources */ = {isa = PBXBuildFile; fileRef = DA12F2FF0EF6E70100A40C6D /* spouseSprite.tga */; };
+		DA12F30A0EF6E70100A40C6D /* tileSet.tga in Resources */ = {isa = PBXBuildFile; fileRef = DA12F3000EF6E70100A40C6D /* tileSet.tga */; };
+		DA12F30B0EF6E70100A40C6D /* chestPrize.tga in Resources */ = {isa = PBXBuildFile; fileRef = DA12F3010EF6E70100A40C6D /* chestPrize.tga */; };
+		DA12F30C0EF6E70100A40C6D /* chestDust.tga in Resources */ = {isa = PBXBuildFile; fileRef = DA12F3020EF6E70100A40C6D /* chestDust.tga */; };
+		DA12F30D0EF6E70100A40C6D /* chest.tga in Resources */ = {isa = PBXBuildFile; fileRef = DA12F3030EF6E70100A40C6D /* chest.tga */; };
+		DA12F30E0EF6E70100A40C6D /* characterSpriteSad.tga in Resources */ = {isa = PBXBuildFile; fileRef = DA12F3040EF6E70100A40C6D /* characterSpriteSad.tga */; };
+		DA12F30F0EF6E70100A40C6D /* characterSprite.tga in Resources */ = {isa = PBXBuildFile; fileRef = DA12F3050EF6E70100A40C6D /* characterSprite.tga */; };
+		DA12F3390EF6E89F00A40C6D /* World.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DA12F32E0EF6E89F00A40C6D /* World.cpp */; };
+		DA12F33A0EF6E89F00A40C6D /* score.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DA12F3300EF6E89F00A40C6D /* score.cpp */; };
+		DA12F33B0EF6E89F00A40C6D /* map.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DA12F3320EF6E89F00A40C6D /* map.cpp */; };
+		DA12F33C0EF6E89F00A40C6D /* landscape.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DA12F3340EF6E89F00A40C6D /* landscape.cpp */; };
+		DA12F33D0EF6E89F00A40C6D /* Envelope.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DA12F3370EF6E89F00A40C6D /* Envelope.cpp */; };
+		DA12F3420EF6E8BD00A40C6D /* blowUp.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DA12F33E0EF6E8BD00A40C6D /* blowUp.cpp */; };
+		DA12F3430EF6E8BD00A40C6D /* common.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DA12F3400EF6E8BD00A40C6D /* common.cpp */; };
+		DA12F3440EF6E8BD00A40C6D /* game.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DA12F3410EF6E8BD00A40C6D /* game.cpp */; };
+		DA12F3E60EF6F00600A40C6D /* music.tga in Resources */ = {isa = PBXBuildFile; fileRef = DA12F3E50EF6F00600A40C6D /* music.tga */; };
+		DA7F11810EF6D77000CB6D50 /* gameWindowAppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = DA7F117E0EF6D77000CB6D50 /* gameWindowAppDelegate.mm */; };
+		DA8276E60EF9B2290061079D /* arrows.tga in Resources */ = {isa = PBXBuildFile; fileRef = DA8276E50EF9B2290061079D /* arrows.tga */; };
+		DA8277840EF9FFE80061079D /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = DA8277830EF9FFE80061079D /* Icon.png */; };
+		DA86AEC90EF53C7100054E6B /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 28AD733E0D9D9553002E5188 /* MainWindow.xib */; };
+		DA8C9E1C0EF8095C002FCA67 /* TimeUnix.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DA8C9E1B0EF8095C002FCA67 /* TimeUnix.cpp */; };
+		DA8C9E1E0EF80968002FCA67 /* ThreadLinux.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DA8C9E1D0EF80968002FCA67 /* ThreadLinux.cpp */; };
+		DA8C9E200EF80985002FCA67 /* PathLinux.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DA8C9E1F0EF80985002FCA67 /* PathLinux.cpp */; };
+		DA8C9F090EF817F7002FCA67 /* StringBufferOutputStream.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DA8C9F050EF817F7002FCA67 /* StringBufferOutputStream.cpp */; };
+		DA8C9F0A0EF817F7002FCA67 /* stringUtils.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DA8C9F070EF817F7002FCA67 /* stringUtils.cpp */; };
+		DA90DD060EFAB907001BABB5 /* musicPlayer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DA90DD050EFAB907001BABB5 /* musicPlayer.cpp */; };
+		DA90DD140EFAC2AF001BABB5 /* Timbre.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DA90DD110EFAC2AF001BABB5 /* Timbre.cpp */; };
+		DA90DD4A0EFADE15001BABB5 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA90DD490EFADE15001BABB5 /* AudioToolbox.framework */; };
+		DA9E302E0EFC010300DFACC7 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA9E302C0EFC010300DFACC7 /* QuartzCore.framework */; };
+		DA9E302F0EFC010300DFACC7 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA9E302D0EFC010300DFACC7 /* OpenGLES.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		1D30AB110D05D00D00671497 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		1D6058910D05DD3D006BFB54 /* Passage.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Passage.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1DF5F4DF0D08C38300B7A737 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		28AD733E0D9D9553002E5188 /* MainWindow.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainWindow.xib; sourceTree = "<group>"; };
+		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		8D1107310486CEB800E47090 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DA12F2FC0EF6E70100A40C6D /* title.tga */ = {isa = PBXFileReference; lastKnownFileType = file; name = title.tga; path = ../graphics/title.tga; sourceTree = SOURCE_ROOT; };
+		DA12F2FD0EF6E70100A40C6D /* heart.tga */ = {isa = PBXFileReference; lastKnownFileType = file; name = heart.tga; path = ../graphics/heart.tga; sourceTree = SOURCE_ROOT; };
+		DA12F2FE0EF6E70100A40C6D /* numerals.tga */ = {isa = PBXFileReference; lastKnownFileType = file; name = numerals.tga; path = ../graphics/numerals.tga; sourceTree = SOURCE_ROOT; };
+		DA12F2FF0EF6E70100A40C6D /* spouseSprite.tga */ = {isa = PBXFileReference; lastKnownFileType = file; name = spouseSprite.tga; path = ../graphics/spouseSprite.tga; sourceTree = SOURCE_ROOT; };
+		DA12F3000EF6E70100A40C6D /* tileSet.tga */ = {isa = PBXFileReference; lastKnownFileType = file; name = tileSet.tga; path = ../graphics/tileSet.tga; sourceTree = SOURCE_ROOT; };
+		DA12F3010EF6E70100A40C6D /* chestPrize.tga */ = {isa = PBXFileReference; lastKnownFileType = file; name = chestPrize.tga; path = ../graphics/chestPrize.tga; sourceTree = SOURCE_ROOT; };
+		DA12F3020EF6E70100A40C6D /* chestDust.tga */ = {isa = PBXFileReference; lastKnownFileType = file; name = chestDust.tga; path = ../graphics/chestDust.tga; sourceTree = SOURCE_ROOT; };
+		DA12F3030EF6E70100A40C6D /* chest.tga */ = {isa = PBXFileReference; lastKnownFileType = file; name = chest.tga; path = ../graphics/chest.tga; sourceTree = SOURCE_ROOT; };
+		DA12F3040EF6E70100A40C6D /* characterSpriteSad.tga */ = {isa = PBXFileReference; lastKnownFileType = file; name = characterSpriteSad.tga; path = ../graphics/characterSpriteSad.tga; sourceTree = SOURCE_ROOT; };
+		DA12F3050EF6E70100A40C6D /* characterSprite.tga */ = {isa = PBXFileReference; lastKnownFileType = file; name = characterSprite.tga; path = ../graphics/characterSprite.tga; sourceTree = SOURCE_ROOT; };
+		DA12F32D0EF6E89F00A40C6D /* World.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = World.h; path = ../World.h; sourceTree = SOURCE_ROOT; };
+		DA12F32E0EF6E89F00A40C6D /* World.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = World.cpp; path = ../World.cpp; sourceTree = SOURCE_ROOT; };
+		DA12F32F0EF6E89F00A40C6D /* score.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = score.h; path = ../score.h; sourceTree = SOURCE_ROOT; };
+		DA12F3300EF6E89F00A40C6D /* score.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = score.cpp; path = ../score.cpp; sourceTree = SOURCE_ROOT; };
+		DA12F3310EF6E89F00A40C6D /* map.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = map.h; path = ../map.h; sourceTree = SOURCE_ROOT; };
+		DA12F3320EF6E89F00A40C6D /* map.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = map.cpp; path = ../map.cpp; sourceTree = SOURCE_ROOT; };
+		DA12F3330EF6E89F00A40C6D /* landscape.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = landscape.h; path = ../landscape.h; sourceTree = SOURCE_ROOT; };
+		DA12F3340EF6E89F00A40C6D /* landscape.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = landscape.cpp; path = ../landscape.cpp; sourceTree = SOURCE_ROOT; };
+		DA12F3350EF6E89F00A40C6D /* HashTable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HashTable.h; path = ../HashTable.h; sourceTree = SOURCE_ROOT; };
+		DA12F3360EF6E89F00A40C6D /* Envelope.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Envelope.h; path = ../Envelope.h; sourceTree = SOURCE_ROOT; };
+		DA12F3370EF6E89F00A40C6D /* Envelope.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Envelope.cpp; path = ../Envelope.cpp; sourceTree = SOURCE_ROOT; };
+		DA12F33E0EF6E8BD00A40C6D /* blowUp.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = blowUp.cpp; sourceTree = "<group>"; };
+		DA12F33F0EF6E8BD00A40C6D /* blowUp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = blowUp.h; sourceTree = "<group>"; };
+		DA12F3400EF6E8BD00A40C6D /* common.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = common.cpp; sourceTree = "<group>"; };
+		DA12F3410EF6E8BD00A40C6D /* game.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = game.cpp; sourceTree = "<group>"; };
+		DA12F3CF0EF6EED000A40C6D /* common.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = common.h; path = ../common.h; sourceTree = SOURCE_ROOT; };
+		DA12F3E50EF6F00600A40C6D /* music.tga */ = {isa = PBXFileReference; lastKnownFileType = file; name = music.tga; path = ../music/music.tga; sourceTree = SOURCE_ROOT; };
+		DA7F10EE0EF6CA2500CB6D50 /* drawIntoScreen.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = drawIntoScreen.h; sourceTree = "<group>"; };
+		DA7F117E0EF6D77000CB6D50 /* gameWindowAppDelegate.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = gameWindowAppDelegate.mm; sourceTree = "<group>"; };
+		DA7F117F0EF6D77000CB6D50 /* gameWindowAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = gameWindowAppDelegate.h; sourceTree = "<group>"; };
+		DA7F11800EF6D77000CB6D50 /* gameWindowApp_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = gameWindowApp_Prefix.pch; sourceTree = "<group>"; };
+		DA8276E50EF9B2290061079D /* arrows.tga */ = {isa = PBXFileReference; lastKnownFileType = file; path = arrows.tga; sourceTree = "<group>"; };
+		DA8277830EF9FFE80061079D /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
+		DA8C9E1B0EF8095C002FCA67 /* TimeUnix.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = TimeUnix.cpp; path = ../../../minorGems/system/unix/TimeUnix.cpp; sourceTree = SOURCE_ROOT; };
+		DA8C9E1D0EF80968002FCA67 /* ThreadLinux.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = ThreadLinux.cpp; path = ../../../minorGems/system/linux/ThreadLinux.cpp; sourceTree = SOURCE_ROOT; };
+		DA8C9E1F0EF80985002FCA67 /* PathLinux.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = PathLinux.cpp; path = ../../../minorGems/io/file/linux/PathLinux.cpp; sourceTree = SOURCE_ROOT; };
+		DA8C9F050EF817F7002FCA67 /* StringBufferOutputStream.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = StringBufferOutputStream.cpp; path = ../../../minorGems/util/StringBufferOutputStream.cpp; sourceTree = SOURCE_ROOT; };
+		DA8C9F060EF817F7002FCA67 /* StringBufferOutputStream.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = StringBufferOutputStream.h; path = ../../../minorGems/util/StringBufferOutputStream.h; sourceTree = SOURCE_ROOT; };
+		DA8C9F070EF817F7002FCA67 /* stringUtils.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = stringUtils.cpp; path = ../../../minorGems/util/stringUtils.cpp; sourceTree = SOURCE_ROOT; };
+		DA8C9F080EF817F7002FCA67 /* stringUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = stringUtils.h; path = ../../../minorGems/util/stringUtils.h; sourceTree = SOURCE_ROOT; };
+		DA90DD050EFAB907001BABB5 /* musicPlayer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = musicPlayer.cpp; sourceTree = "<group>"; };
+		DA90DD110EFAC2AF001BABB5 /* Timbre.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Timbre.cpp; path = ../Timbre.cpp; sourceTree = SOURCE_ROOT; };
+		DA90DD120EFAC2AF001BABB5 /* Timbre.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Timbre.h; path = ../Timbre.h; sourceTree = SOURCE_ROOT; };
+		DA90DD130EFAC2AF001BABB5 /* musicPlayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = musicPlayer.h; path = ../musicPlayer.h; sourceTree = SOURCE_ROOT; };
+		DA90DD490EFADE15001BABB5 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		DA9E302C0EFC010300DFACC7 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		DA9E302D0EFC010300DFACC7 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1D60588F0D05DD3D006BFB54 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */,
+				1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */,
+				DA90DD4A0EFADE15001BABB5 /* AudioToolbox.framework in Frameworks */,
+				DA9E302E0EFC010300DFACC7 /* QuartzCore.framework in Frameworks */,
+				DA9E302F0EFC010300DFACC7 /* OpenGLES.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		080E96DDFE201D6D7F000001 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		19C28FACFE9D520D11CA2CBB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1D6058910D05DD3D006BFB54 /* Passage.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		29B97314FDCFA39411CA2CEA /* CustomTemplate */ = {
+			isa = PBXGroup;
+			children = (
+				080E96DDFE201D6D7F000001 /* Classes */,
+				29B97315FDCFA39411CA2CEA /* Other Sources */,
+				29B97317FDCFA39411CA2CEA /* Resources */,
+				29B97323FDCFA39411CA2CEA /* Frameworks */,
+				19C28FACFE9D520D11CA2CBB /* Products */,
+			);
+			name = CustomTemplate;
+			sourceTree = "<group>";
+		};
+		29B97315FDCFA39411CA2CEA /* Other Sources */ = {
+			isa = PBXGroup;
+			children = (
+				DA12F31E0EF6E84900A40C6D /* Unchanged */,
+				DA12F31D0EF6E83D00A40C6D /* Customized */,
+				DA7F117E0EF6D77000CB6D50 /* gameWindowAppDelegate.mm */,
+				DA7F117F0EF6D77000CB6D50 /* gameWindowAppDelegate.h */,
+				DA7F11800EF6D77000CB6D50 /* gameWindowApp_Prefix.pch */,
+				DA7F10EE0EF6CA2500CB6D50 /* drawIntoScreen.h */,
+				29B97316FDCFA39411CA2CEA /* main.m */,
+			);
+			name = "Other Sources";
+			sourceTree = "<group>";
+		};
+		29B97317FDCFA39411CA2CEA /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				DA8277830EF9FFE80061079D /* Icon.png */,
+				DA12F2FB0EF6E6B100A40C6D /* graphics */,
+				28AD733E0D9D9553002E5188 /* MainWindow.xib */,
+				8D1107310486CEB800E47090 /* Info.plist */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DA9E302C0EFC010300DFACC7 /* QuartzCore.framework */,
+				DA9E302D0EFC010300DFACC7 /* OpenGLES.framework */,
+				DA90DD490EFADE15001BABB5 /* AudioToolbox.framework */,
+				1DF5F4DF0D08C38300B7A737 /* UIKit.framework */,
+				1D30AB110D05D00D00671497 /* Foundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DA12F2FB0EF6E6B100A40C6D /* graphics */ = {
+			isa = PBXGroup;
+			children = (
+				DA8276E50EF9B2290061079D /* arrows.tga */,
+				DA12F3E50EF6F00600A40C6D /* music.tga */,
+				DA12F2FC0EF6E70100A40C6D /* title.tga */,
+				DA12F2FD0EF6E70100A40C6D /* heart.tga */,
+				DA12F2FE0EF6E70100A40C6D /* numerals.tga */,
+				DA12F2FF0EF6E70100A40C6D /* spouseSprite.tga */,
+				DA12F3000EF6E70100A40C6D /* tileSet.tga */,
+				DA12F3010EF6E70100A40C6D /* chestPrize.tga */,
+				DA12F3020EF6E70100A40C6D /* chestDust.tga */,
+				DA12F3030EF6E70100A40C6D /* chest.tga */,
+				DA12F3040EF6E70100A40C6D /* characterSpriteSad.tga */,
+				DA12F3050EF6E70100A40C6D /* characterSprite.tga */,
+			);
+			name = graphics;
+			sourceTree = "<group>";
+		};
+		DA12F31D0EF6E83D00A40C6D /* Customized */ = {
+			isa = PBXGroup;
+			children = (
+				DA12F33E0EF6E8BD00A40C6D /* blowUp.cpp */,
+				DA90DD050EFAB907001BABB5 /* musicPlayer.cpp */,
+				DA12F33F0EF6E8BD00A40C6D /* blowUp.h */,
+				DA12F3400EF6E8BD00A40C6D /* common.cpp */,
+				DA12F3410EF6E8BD00A40C6D /* game.cpp */,
+			);
+			name = Customized;
+			sourceTree = "<group>";
+		};
+		DA12F31E0EF6E84900A40C6D /* Unchanged */ = {
+			isa = PBXGroup;
+			children = (
+				DA8C9E030EF80930002FCA67 /* minorGems */,
+				DA90DD110EFAC2AF001BABB5 /* Timbre.cpp */,
+				DA90DD120EFAC2AF001BABB5 /* Timbre.h */,
+				DA90DD130EFAC2AF001BABB5 /* musicPlayer.h */,
+				DA12F3CF0EF6EED000A40C6D /* common.h */,
+				DA12F32D0EF6E89F00A40C6D /* World.h */,
+				DA12F32E0EF6E89F00A40C6D /* World.cpp */,
+				DA12F32F0EF6E89F00A40C6D /* score.h */,
+				DA12F3300EF6E89F00A40C6D /* score.cpp */,
+				DA12F3310EF6E89F00A40C6D /* map.h */,
+				DA12F3320EF6E89F00A40C6D /* map.cpp */,
+				DA12F3330EF6E89F00A40C6D /* landscape.h */,
+				DA12F3340EF6E89F00A40C6D /* landscape.cpp */,
+				DA12F3350EF6E89F00A40C6D /* HashTable.h */,
+				DA12F3360EF6E89F00A40C6D /* Envelope.h */,
+				DA12F3370EF6E89F00A40C6D /* Envelope.cpp */,
+			);
+			name = Unchanged;
+			sourceTree = "<group>";
+		};
+		DA8C9E030EF80930002FCA67 /* minorGems */ = {
+			isa = PBXGroup;
+			children = (
+				DA8C9F050EF817F7002FCA67 /* StringBufferOutputStream.cpp */,
+				DA8C9F060EF817F7002FCA67 /* StringBufferOutputStream.h */,
+				DA8C9F070EF817F7002FCA67 /* stringUtils.cpp */,
+				DA8C9F080EF817F7002FCA67 /* stringUtils.h */,
+				DA8C9E1F0EF80985002FCA67 /* PathLinux.cpp */,
+				DA8C9E1B0EF8095C002FCA67 /* TimeUnix.cpp */,
+				DA8C9E1D0EF80968002FCA67 /* ThreadLinux.cpp */,
+			);
+			name = minorGems;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1D6058900D05DD3D006BFB54 /* Passage */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1D6058960D05DD3E006BFB54 /* Build configuration list for PBXNativeTarget "Passage" */;
+			buildPhases = (
+				1D60588D0D05DD3D006BFB54 /* Resources */,
+				1D60588E0D05DD3D006BFB54 /* Sources */,
+				1D60588F0D05DD3D006BFB54 /* Frameworks */,
+				DA12F31C0EF6E79F00A40C6D /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Passage;
+			productName = testWindowApp;
+			productReference = 1D6058910D05DD3D006BFB54 /* Passage.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		29B97313FDCFA39411CA2CEA /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = C01FCF4E08A954540054247B /* Build configuration list for PBXProject "gameWindowApp" */;
+			compatibilityVersion = "Xcode 3.1";
+			hasScannedForEncodings = 1;
+			mainGroup = 29B97314FDCFA39411CA2CEA /* CustomTemplate */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1D6058900D05DD3D006BFB54 /* Passage */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1D60588D0D05DD3D006BFB54 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DA86AEC90EF53C7100054E6B /* MainWindow.xib in Resources */,
+				DA12F3060EF6E70100A40C6D /* title.tga in Resources */,
+				DA12F3070EF6E70100A40C6D /* heart.tga in Resources */,
+				DA12F3080EF6E70100A40C6D /* numerals.tga in Resources */,
+				DA12F3090EF6E70100A40C6D /* spouseSprite.tga in Resources */,
+				DA12F30A0EF6E70100A40C6D /* tileSet.tga in Resources */,
+				DA12F30B0EF6E70100A40C6D /* chestPrize.tga in Resources */,
+				DA12F30C0EF6E70100A40C6D /* chestDust.tga in Resources */,
+				DA12F30D0EF6E70100A40C6D /* chest.tga in Resources */,
+				DA12F30E0EF6E70100A40C6D /* characterSpriteSad.tga in Resources */,
+				DA12F30F0EF6E70100A40C6D /* characterSprite.tga in Resources */,
+				DA12F3E60EF6F00600A40C6D /* music.tga in Resources */,
+				DA8276E60EF9B2290061079D /* arrows.tga in Resources */,
+				DA8277840EF9FFE80061079D /* Icon.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		DA12F31C0EF6E79F00A40C6D /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1D60588E0D05DD3D006BFB54 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1D60589B0D05DD56006BFB54 /* main.m in Sources */,
+				DA7F11810EF6D77000CB6D50 /* gameWindowAppDelegate.mm in Sources */,
+				DA12F3390EF6E89F00A40C6D /* World.cpp in Sources */,
+				DA12F33A0EF6E89F00A40C6D /* score.cpp in Sources */,
+				DA12F33B0EF6E89F00A40C6D /* map.cpp in Sources */,
+				DA12F33C0EF6E89F00A40C6D /* landscape.cpp in Sources */,
+				DA12F33D0EF6E89F00A40C6D /* Envelope.cpp in Sources */,
+				DA12F3420EF6E8BD00A40C6D /* blowUp.cpp in Sources */,
+				DA12F3430EF6E8BD00A40C6D /* common.cpp in Sources */,
+				DA12F3440EF6E8BD00A40C6D /* game.cpp in Sources */,
+				DA8C9E1C0EF8095C002FCA67 /* TimeUnix.cpp in Sources */,
+				DA8C9E1E0EF80968002FCA67 /* ThreadLinux.cpp in Sources */,
+				DA8C9E200EF80985002FCA67 /* PathLinux.cpp in Sources */,
+				DA8C9F090EF817F7002FCA67 /* StringBufferOutputStream.cpp in Sources */,
+				DA8C9F0A0EF817F7002FCA67 /* stringUtils.cpp in Sources */,
+				DA90DD060EFAB907001BABB5 /* musicPlayer.cpp in Sources */,
+				DA90DD140EFAC2AF001BABB5 /* Timbre.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		1D6058940D05DD3E006BFB54 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = gameWindowApp_Prefix.pch;
+				HEADER_SEARCH_PATHS = /Users/jasonrohrer/cpp;
+				INFOPLIST_FILE = Info.plist;
+				PRODUCT_NAME = Passage;
+			};
+			name = Debug;
+		};
+		1D6058950D05DD3E006BFB54 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = gameWindowApp_Prefix.pch;
+				HEADER_SEARCH_PATHS = /Users/jasonrohrer/cpp;
+				INFOPLIST_FILE = Info.plist;
+				PRODUCT_NAME = Passage;
+			};
+			name = Release;
+		};
+		C01FCF4F08A954540054247B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PREBINDING = NO;
+				SDKROOT = iphoneos2.2;
+			};
+			name = Debug;
+		};
+		C01FCF5008A954540054247B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				PREBINDING = NO;
+				SDKROOT = iphoneos2.2;
+			};
+			name = Release;
+		};
+		DA9E30CB0EFC240700DFACC7 /* Distribution */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				PREBINDING = NO;
+				SDKROOT = iphoneos2.2;
+			};
+			name = Distribution;
+		};
+		DA9E30CC0EFC240700DFACC7 /* Distribution */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Jason Rohrer";
+				COPY_PHASE_STRIP = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = gameWindowApp_Prefix.pch;
+				HEADER_SEARCH_PATHS = /Users/jasonrohrer/cpp;
+				INFOPLIST_FILE = Info.plist;
+				PRODUCT_NAME = Passage;
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "0BE1AB5F-422D-4C27-A26D-B23A5A1F89C1";
+			};
+			name = Distribution;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1D6058960D05DD3E006BFB54 /* Build configuration list for PBXNativeTarget "Passage" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1D6058940D05DD3E006BFB54 /* Debug */,
+				1D6058950D05DD3E006BFB54 /* Release */,
+				DA9E30CC0EFC240700DFACC7 /* Distribution */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C01FCF4E08A954540054247B /* Build configuration list for PBXProject "gameWindowApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C01FCF4F08A954540054247B /* Debug */,
+				C01FCF5008A954540054247B /* Release */,
+				DA9E30CB0EFC240700DFACC7 /* Distribution */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 29B97313FDCFA39411CA2CEA /* Project object */;
+}

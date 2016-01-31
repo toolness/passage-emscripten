@@ -1,0 +1,14 @@
+Provider	Provider Country	Vendor Identifier	UPC	ISRC	Artist / Show	Title / Episode / Season	Label/Studio/Network	Product Type Identifier	Units	Royalty Price	Begin Date	End Date	Customer Currency	Country Code	Royalty Currency	Preorder	Season Pass	ISAN	Apple Identifier	Customer Price	CMA	Asset/Content Flavor
+APPLE	US	1001	 	 	Jason Rohrer	Passage	 	7	2	0	01/11/2009	01/11/2009	GBP	GB	GBP	 	 	 	300702040	0	 	 
+APPLE	US	1001	 	 	Jason Rohrer	Passage	 	7	1	0	01/11/2009	01/11/2009	EUR	FR	EUR	 	 	 	300702040	0	 	 
+APPLE	US	1001	 	 	Jason Rohrer	Passage	 	7	1	0	01/11/2009	01/11/2009	CAD	CA	CAD	 	 	 	300702040	0	 	 
+APPLE	US	1001	 	 	Jason Rohrer	Passage	 	1	1	.7	01/11/2009	01/11/2009	USD	AR	USD	 	 	 	300702040	.99	 	 
+APPLE	US	1001	 	 	Jason Rohrer	Passage	 	1	1	.48	01/11/2009	01/11/2009	EUR	FI	EUR	 	 	 	300702040	.79	 	 
+APPLE	US	1001	 	 	Jason Rohrer	Passage	 	7	1	0	01/11/2009	01/11/2009	AUD	AU	AUD	 	 	 	300702040	0	 	 
+APPLE	US	1001	 	 	Jason Rohrer	Passage	 	1	1	.76	01/11/2009	01/11/2009	AUD	AU	AUD	 	 	 	300702040	1.19	 	 
+APPLE	US	1001	 	 	Jason Rohrer	Passage	 	7	24	0	01/11/2009	01/11/2009	USD	US	USD	 	 	 	300702040	0	 	 
+APPLE	US	1001	 	 	Jason Rohrer	Passage	 	1	1	.48	01/11/2009	01/11/2009	SEK	SE	EUR	 	 	 	300702040	7	 	 
+APPLE	US	1001	 	 	Jason Rohrer	Passage	 	1	29	.7	01/11/2009	01/11/2009	USD	US	USD	 	 	 	300702040	.99	 	 
+APPLE	US	1001	 	 	Jason Rohrer	Passage	 	1	1	.48	01/11/2009	01/11/2009	EUR	DE	EUR	 	 	 	300702040	.79	 	 
+APPLE	US	1001	 	 	Jason Rohrer	Passage	 	1	2	81	01/11/2009	01/11/2009	JPY	JP	JPY	 	 	 	300702040	115	 	 
+APPLE	US	1001	 	 	Jason Rohrer	Passage	 	1	1	.48	01/11/2009	01/11/2009	EUR	FR	EUR	 	 	 	300702040	.79	 	 

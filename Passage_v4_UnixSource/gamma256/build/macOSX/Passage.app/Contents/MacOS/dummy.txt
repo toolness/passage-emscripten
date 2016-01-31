@@ -1,0 +1,2 @@
+A placeholder file so that "cvs export" will include this otherwise empty 
+directory.

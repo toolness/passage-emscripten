@@ -1,0 +1,26 @@
+Provider	Provider Country	Vendor Identifier	UPC	ISRC	Artist / Show	Title / Episode / Season	Label/Studio/Network	Product Type Identifier	Units	Royalty Price	Begin Date	End Date	Customer Currency	Country Code	Royalty Currency	Preorder	Season Pass	ISAN	Apple Identifier	Customer Price	CMA	Asset/Content Flavor
+APPLE	US	1001	 	 	Jason Rohrer	Passage	 	1	22	.7	01/05/2009	01/05/2009	USD	US	USD	 	 	 	300702040	.99	 	 
+APPLE	US	1001	 	 	Jason Rohrer	Passage	 	7	1	0	01/05/2009	01/05/2009	CHF	CH	EUR	 	 	 	300702040	0	 	 
+APPLE	US	1001	 	 	Jason Rohrer	Passage	 	1	2	.76	01/05/2009	01/05/2009	AUD	AU	AUD	 	 	 	300702040	1.19	 	 
+APPLE	US	1001	 	 	Jason Rohrer	Passage	 	7	106	0	01/05/2009	01/05/2009	USD	US	USD	 	 	 	300702040	0	 	 
+APPLE	US	1001	 	 	Jason Rohrer	Passage	 	1	1	.48	01/05/2009	01/05/2009	EUR	DE	EUR	 	 	 	300702040	.79	 	 
+APPLE	US	1001	 	 	Jason Rohrer	Passage	 	7	1	0	01/05/2009	01/05/2009	EUR	ES	EUR	 	 	 	300702040	0	 	 
+APPLE	US	1001	 	 	Jason Rohrer	Passage	 	7	1	0	01/05/2009	01/05/2009	DKK	DK	EUR	 	 	 	300702040	0	 	 
+APPLE	US	1001	 	 	Jason Rohrer	Passage	 	1	2	81	01/05/2009	01/05/2009	JPY	JP	JPY	 	 	 	300702040	115	 	 
+APPLE	US	1001	 	 	Jason Rohrer	Passage	 	7	22	0	01/05/2009	01/05/2009	GBP	GB	GBP	 	 	 	300702040	0	 	 
+APPLE	US	1001	 	 	Jason Rohrer	Passage	 	7	1	0	01/05/2009	01/05/2009	EUR	IE	EUR	 	 	 	300702040	0	 	 
+APPLE	US	1001	 	 	Jason Rohrer	Passage	 	7	1	0	01/05/2009	01/05/2009	EUR	IT	EUR	 	 	 	300702040	0	 	 
+APPLE	US	1001	 	 	Jason Rohrer	Passage	 	7	2	0	01/05/2009	01/05/2009	EUR	NL	EUR	 	 	 	300702040	0	 	 
+APPLE	US	1001	 	 	Jason Rohrer	Passage	 	7	11	0	01/05/2009	01/05/2009	EUR	DE	EUR	 	 	 	300702040	0	 	 
+APPLE	US	1001	 	 	Jason Rohrer	Passage	 	1	6	.36	01/05/2009	01/05/2009	GBP	GB	GBP	 	 	 	300702040	.59	 	 
+APPLE	US	1001	 	 	Jason Rohrer	Passage	 	1	1	.48	01/05/2009	01/05/2009	EUR	NL	EUR	 	 	 	300702040	.79	 	 
+APPLE	US	1001	 	 	Jason Rohrer	Passage	 	7	6	0	01/05/2009	01/05/2009	SEK	SE	EUR	 	 	 	300702040	0	 	 
+APPLE	US	1001	 	 	Jason Rohrer	Passage	 	7	9	0	01/05/2009	01/05/2009	AUD	AU	AUD	 	 	 	300702040	0	 	 
+APPLE	US	1001	 	 	Jason Rohrer	Passage	 	7	2	0	01/05/2009	01/05/2009	NZD	NZ	AUD	 	 	 	300702040	0	 	 
+APPLE	US	1001	 	 	Jason Rohrer	Passage	 	7	3	0	01/05/2009	01/05/2009	EUR	FR	EUR	 	 	 	300702040	0	 	 
+APPLE	US	1001	 	 	Jason Rohrer	Passage	 	7	1	0	01/05/2009	01/05/2009	EUR	FI	EUR	 	 	 	300702040	0	 	 
+APPLE	US	1001	 	 	Jason Rohrer	Passage	 	1	1	.48	01/05/2009	01/05/2009	DKK	DK	EUR	 	 	 	300702040	6	 	 
+APPLE	US	1001	 	 	Jason Rohrer	Passage	 	7	1	0	01/05/2009	01/05/2009	EUR	BE	EUR	 	 	 	300702040	0	 	 
+APPLE	US	1001	 	 	Jason Rohrer	Passage	 	7	6	0	01/05/2009	01/05/2009	CAD	CA	CAD	 	 	 	300702040	0	 	 
+APPLE	US	1001	 	 	Jason Rohrer	Passage	 	1	1	.7	01/05/2009	01/05/2009	CAD	CA	CAD	 	 	 	300702040	.99	 	 
+APPLE	US	1001	 	 	Jason Rohrer	Passage	 	7	1	0	01/05/2009	01/05/2009	USD	SG	USD	 	 	 	300702040	0	 	 

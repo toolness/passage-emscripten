@@ -1,0 +1,1 @@
+g++ -I../../.. -o screenCompress screenCompress.cpp ../../../minorGems/graphics/linux/ScreenGraphicsLinux.cpp ../../../minorGems/io/file/linux/PathLinux.cpp landscape.o -lSDL
