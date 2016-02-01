@@ -192,10 +192,10 @@ extern "C" char waitForKeyOrButton() {
                     break;
                 }
             }
+        emscripten_sleep(30);
         }
     
     
-    emscripten_sleep(30);
     return false;
     }
 
