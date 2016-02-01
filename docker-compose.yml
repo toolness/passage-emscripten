@@ -1,5 +1,5 @@
 em:
   build: .
-  working_dir: /usr/src/passage/gamma256/gameSource
+  working_dir: /usr/src/passage
   volumes:
     - ./Passage_v4_UnixSource:/usr/src/passage

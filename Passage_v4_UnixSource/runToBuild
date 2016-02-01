@@ -9,8 +9,6 @@
 
 
 cd gamma256/gameSource
-chmod u+x ./configure
-./configure
 
 
 
@@ -22,17 +20,12 @@ make
 
 cd ../..
 
-mkdir graphics
-mkdir music
-mkdir settings
+mkdir -p www
 
-cp gamma256/gameSource/Passage ./Passage
-cp gamma256/documentation/Readme.txt .
-cp gamma256/gameSource/graphics/* ./graphics
-cp gamma256/gameSource/music/* ./music
-cp gamma256/gameSource/settings/* ./settings
+cp gamma256/gameSource/Passage.* ./www/
+cp gamma256/documentation/Readme.txt ./www/
 
-echo "Run Passage to play."
+echo "Visit www/Passage.html in a browser to play."
 
 
 
