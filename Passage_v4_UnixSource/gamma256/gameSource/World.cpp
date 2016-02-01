@@ -307,7 +307,7 @@ Uint32 sampleFromWorld( int inX, int inY, double inWeight ) {
     unsigned char b = (unsigned char)( inWeight * c.b );
     
 
-    return r << 16 | g << 8 | b;
+    return r | g << 8 | b << 16;
     }
 
 

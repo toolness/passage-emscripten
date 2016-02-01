@@ -591,11 +591,11 @@ extern "C" char playGame() {
     
     for( int i=0; i<numTitlePixels; i++ ) {
         titlePixels[ i ] =
-            (unsigned char )( titleRed[i] * 255 ) << 16
+            (unsigned char )( titleRed[i] * 255 )
             |
-            (unsigned char )( titleGreen[i] * 255 ) << 8
+            (unsigned char )( titleGreen[i] * 255) << 8
             |
-            (unsigned char )( titleBlue[i] * 255 );
+            (unsigned char )( titleBlue[i] * 255 ) << 16;
         }
     
     // fill screen with title
@@ -879,15 +879,15 @@ extern "C" char playGame() {
 
                 Uint32 gamePixel = gameImage[i];
                 
-                unsigned char gameRed = gamePixel >> 16 & 0xFF;
+                unsigned char gameRed = gamePixel & 0xFF;
                 unsigned char gameGreen = gamePixel >> 8 & 0xFF;
-                unsigned char gameBlue = gamePixel & 0xFF;
+                unsigned char gameBlue = gamePixel >> 16 & 0xFF;
                 
                 Uint32 titlePixel = titlePixels[i];
                 
-                unsigned char titleRed = titlePixel >> 16 & 0xFF;
+                unsigned char titleRed = titlePixel & 0xFF;
                 unsigned char titleGreen = titlePixel >> 8 & 0xFF;
-                unsigned char titleBlue = titlePixel & 0xFF;
+                unsigned char titleBlue = titlePixel >> 16 & 0xFF;
             
                 unsigned char red = 
                     (unsigned char)( 
@@ -902,7 +902,7 @@ extern "C" char playGame() {
 
                 int x = i % width;
                 if( x <= wipePosition ) {
-                    gameImage[i] = red << 16 | green << 8 | blue;
+                    gameImage[i] = red | green << 8 | blue << 16;
                     }
                 
                 }

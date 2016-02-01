@@ -49,7 +49,7 @@ void initScore() {
             (unsigned char)( 
                 numeralBlue[ i ] );
             
-        numeralARGB[i] = r << 16 | g << 8 | b;
+        numeralARGB[i] = r | g << 8 | b << 16;
         }
     }
 
