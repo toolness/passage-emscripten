@@ -78,7 +78,7 @@ Passage: ${GAME_OBJECTS} ${MINOR_GEMS_OBJECTS}
           ${PLATFORM_LINK_FLAGS} --preload-file graphics \
           --preload-file music -s ALLOW_MEMORY_GROWTH=1 \
           -s DEMANGLE_SUPPORT=1 -s EMTERPRETIFY=1 -s EMTERPRETIFY_ASYNC=1 \
-          -s EMTERPRETIFY_WHITELIST='["_main", "_mainFunction", "_playGame", "_waitForKeyOrButton"]'
+          -s EMTERPRETIFY_WHITELIST='["_main", "_mainFunction", "_playGame", "_waitForKeyOrButton", "_audioCallback", "__ZN12SimpleVectorIP4NoteE9push_backES1_", "__ZN12SimpleVectorIP4NoteE4sizeEv", "__ZN12SimpleVectorIP4NoteE10getElementEi", "__ZN8Envelope11getEnvelopeEi", "__ZN12SimpleVectorIP4NoteE13deleteElementEi"]'
 
 testMusicPlayer: ${GAME_OBJECTS} testMusicPlayer.o common.o Timbre.o Envelope.o ${MINOR_GEMS_OBJECTS}
 	${LINK} -o testMusicPlayer musicPlayer.o testMusicPlayer.o common.o Timbre.o Envelope.o ${MINOR_GEMS_OBJECTS} ${PLATFORM_LINK_FLAGS}

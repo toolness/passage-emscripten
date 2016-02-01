@@ -192,7 +192,7 @@ extern "C" char waitForKeyOrButton() {
                     break;
                 }
             }
-        emscripten_sleep(30);
+        emscripten_sleep_with_yield(30);
         }
     
     
@@ -704,7 +704,7 @@ extern "C" char playGame() {
 
 
     while( !done ) {
-        emscripten_sleep(30);
+        emscripten_sleep_with_yield(30);
         
         if( getKeyDown( SDLK_s ) ) {
             stepDX = false;

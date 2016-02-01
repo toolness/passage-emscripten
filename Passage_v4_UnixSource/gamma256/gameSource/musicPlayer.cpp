@@ -100,7 +100,7 @@ class Note {
 Note ***noteGrid;
 
 
-SimpleVector<Note*> currentlyPlayingNotes;
+SimpleVector<Note*> currentlyPlayingNotes(100);
 
 
 
@@ -132,14 +132,13 @@ void restartMusic() {
 
 
 // called by SDL to get more samples
-void audioCallback( void *inUserData, Uint8 *inStream, int inLengthToFill ) {
-    
+extern "C" void audioCallback( void *inUserData, Uint8 *inStream, int inLengthToFill ) {
     // 2 bytes for each channel of stereo sample
     int numSamples = inLengthToFill / 4;
     
 
-    Sint16 *samplesL = new Sint16[ numSamples ];
-    Sint16 *samplesR = new Sint16[ numSamples ];
+    Sint16 samplesL[ numSamples ];
+    Sint16 samplesR[ numSamples ];
     
     // first, zero-out the buffer to prepare it for our sum of note samples
     // each sample is 2 bytes
@@ -301,8 +300,6 @@ void audioCallback( void *inUserData, Uint8 *inStream, int inLengthToFill ) {
         streamPosition += 4;
         }
 
-    delete [] samplesL;
-    delete [] samplesR;
     
     }
 

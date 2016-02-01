@@ -1,10 +1,6 @@
 This is an attempt to port Jason Rohrer's [Passage][] (2007) to the Web via
 [Emscripten][].
 
-**WARNING:** This port features functional video and input, but does not
-currently feature any audio. As such, it's not recommended that you use
-this to play the game for the first time!
-
 ## Quick Start
 
 First, you will need to [download and install Emscripten][download]. You can
