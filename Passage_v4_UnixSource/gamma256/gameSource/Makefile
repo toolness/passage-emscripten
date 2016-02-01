@@ -29,7 +29,6 @@ ${MG_PATH}/util/stringUtils.cpp \
 ${MG_PATH}/util/StringBufferOutputStream.cpp \
 ${MG_PATH}/util/SettingsManager.cpp \
 ${MG_PATH}/system/${TIME_PLATFORM_PATH}/Time${TIME_PLATFORM_NAME}.cpp \
-${MG_PATH}/system/${PLATFORM_PATH}/Thread${PLATFORM_NAME}.cpp \
 ${MG_PATH}/crypto/hashes/sha1.cpp \
 ${MG_PATH}/formats/encodingUtils.cpp \
 

@@ -40,7 +40,6 @@ int main( int inArgCount, char **inArgs ) {
 #include "musicPlayer.h"
 
 #include "minorGems/system/Time.h"
-#include "minorGems/system/Thread.h"
 #include "minorGems/util/stringUtils.h"
 #include "minorGems/util/SettingsManager.h"
 
@@ -704,7 +703,6 @@ extern "C" char playGame() {
 
 
     while( !done ) {
-        emscripten_sleep_with_yield(30);
         
         if( getKeyDown( SDLK_s ) ) {
             stepDX = false;
@@ -930,7 +928,10 @@ extern "C" char playGame() {
         double extraTime = 1.0 / lockedFrameRate - frameTime;
         
         if( extraTime > 0 ) {
-            Thread::staticSleep( (int)( extraTime * 1000 ) );
+            emscripten_sleep_with_yield( (int)( extraTime * 1000 ) );
+            }
+        else {
+            emscripten_sleep_with_yield(10);
             }
 
         // start timing next frame
