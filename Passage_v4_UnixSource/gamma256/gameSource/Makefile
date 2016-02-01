@@ -13,8 +13,8 @@ PLATFORM_LINK_FLAGS = -lSDL
 ROOT_PATH = ../..
 
 COMPILE = emcc ${PLATFORM_COMPILE_FLAGS} -Wall -Wwrite-strings \
-  -Wchar-subscripts -Wparentheses -g -I${ROOT_PATH} -c
-LINK = emcc -I${ROOT_PATH}
+  -Wchar-subscripts -Wparentheses -g -I${ROOT_PATH} ${EMCC_FLAGS} -c
+LINK = emcc ${EMCC_FLAGS} -I${ROOT_PATH}
 
 
 

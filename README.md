@@ -13,6 +13,12 @@ cd Passage_v4_UnixSource
 ./runToBuild
 ```
 
+To build with optimizations, run:
+
+```
+EMCC_FLAGS='-O2' ./runToBuild
+```
+
 ### Quick Start (Docker)
 
 If you don't want to deal with installing the Emscripten toolchain on your
