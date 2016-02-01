@@ -40,6 +40,25 @@ repository. So to build everything, you can just run `./runToBuild`.
   details on what was changed to support Emscripten; I tried to make
   sure that the commits are fairly clean and easy to understand.
 
+* Running `emcc -v` on my development environment yielded:
+
+  ```
+  emcc (Emscripten gcc/clang-like replacement + linker emulating GNU ld) 1.35.0
+  clang version 3.7.0 (https://github.com/kripken/emscripten-fastcomp-clang/ dbe68fecd03d6f646bd075963c3cc0e7130e5767) (https://github.com/kripken/emscripten-fastcomp/ 4e83be90903250ec5142edc57971ed4c633c5e25)
+  Target: x86_64-unknown-linux-gnu
+  Thread model: posix
+  Found candidate GCC installation: /usr/lib/gcc/x86_64-linux-gnu/4.8
+  Found candidate GCC installation: /usr/lib/gcc/x86_64-linux-gnu/4.8.4
+  Found candidate GCC installation: /usr/lib/gcc/x86_64-linux-gnu/4.9
+  Found candidate GCC installation: /usr/lib/gcc/x86_64-linux-gnu/4.9.2
+  Selected GCC installation: /usr/lib/gcc/x86_64-linux-gnu/4.9
+  Candidate multilib: .;@m64
+  Selected multilib: .;@m64
+  ```
+
+  It is entirely possible that different versions may cause compilation
+  to fail.
+
 ## License
 
 The original Passage has been placed in the public domain.
