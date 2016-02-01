@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<style>
+html {
+  text-align: center;
+}
+
+.emscripten_border {
+  min-height: 480px;
+}
+
+.emscripten {
+  padding-right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+</style>
+<title>Passage</title>
+<h1>Passage</h1>
+<p>A video game by <a href="http://hcsoftware.sourceforge.net/jason-rohrer/">Jason Rohrer</a></p>
+<div class="emscripten_border"><canvas class="emscripten" id="canvas"></canvas></div>
+<p id="status"></p>
+<input type="button" value="Fullscreen" onclick="Module.requestFullScreen(true, false)">
+<script>
+var Module = {
+  preRun: [],
+  postRun: [],
+  print: function(text) {
+    console.log(text);
+  },
+  printErr: function(text) {
+    console.error(text);
+  },
+  canvas: document.getElementById('canvas'),
+  setStatus: function(text) {
+    document.getElementById('status').textContent = text;
+    console.log("SetStatus", text);
+  }
+};
+</script>
+<script async src="Passage.js"></script>

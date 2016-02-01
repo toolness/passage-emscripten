@@ -20,8 +20,6 @@ make
 
 cd ../..
 
-mkdir -p www
-
 cp gamma256/gameSource/Passage.* ./www/
 cp gamma256/documentation/Readme.txt ./www/
 
