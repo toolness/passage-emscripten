@@ -2,7 +2,8 @@ This is an attempt to port Jason Rohrer's [Passage][] (2007) to the Web via
 [Emscripten][].
 
 **WARNING:** This port features functional video and input, but does not
-yet feature any audio.
+currently feature any audio. As such, it's not recommended that you use
+this to play the game for the first time!
 
 ## Quick Start
 
@@ -38,6 +39,16 @@ repository. So to build everything, you can just run `./runToBuild`.
 * [Emterpreter][] (specifically Emterpreter-Async) is used to manually
   control the call stack so the original code can work without too much
   refactoring.
+
+* See this project's commit history for details on what was changed 
+  to support Emscripten; I tried to make sure that the commits are fairly
+  clean and easy to understand.
+
+## License
+
+The original Passage has been placed in the public domain.
+
+This port is in the public domain as well.
 
 [Passage]: http://hcsoftware.sourceforge.net/passage/
 [Emscripten]: http://emscripten.org/
