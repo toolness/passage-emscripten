@@ -40,9 +40,9 @@ repository. So to build everything, you can just run `./runToBuild`.
   control the call stack so the original code can work without too much
   refactoring.
 
-* See this project's commit history for details on what was changed 
-  to support Emscripten; I tried to make sure that the commits are fairly
-  clean and easy to understand.
+* See the [history for `Passage_v4_UnixSource/gamma256`][history] for
+  details on what was changed to support Emscripten; I tried to make
+  sure that the commits are fairly clean and easy to understand.
 
 ## License
 
@@ -56,3 +56,4 @@ This port is in the public domain as well.
 [download]: http://kripken.github.io/emscripten-site/docs/getting_started/downloads.html
 [Docker]: http://docker.com/
 [Docker Compose]: https://docs.docker.com/compose/
+[history]: https://github.com/toolness/passage-emscripten/commits/master/Passage_v4_UnixSource/gamma256
