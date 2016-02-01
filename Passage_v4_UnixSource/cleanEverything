@@ -1,0 +1,4 @@
+#!/bin/bash
+
+find . -name '*.o' -print0 | xargs -0 rm -f
+rm -f ./gamma256/gameSource/Passage.* ./www/Passage.* ./www/Readme.txt
