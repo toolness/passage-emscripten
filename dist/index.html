@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<style>
+html {
+  text-align: center;
+}
+
+body {
+  width: 640px;
+  margin: 0 auto;
+}
+
+.emscripten_border {
+  min-height: 480px;
+}
+
+.emscripten {
+  padding-right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+
+#status {
+  min-height: 1.5em;
+}
+
+.info {
+  text-align: left;
+}
+</style>
+<title>Passage</title>
+<h1>Passage</h1>
+<p>A video game by <a href="http://hcsoftware.sourceforge.net/jason-rohrer/">Jason Rohrer</a></p>
+<div class="emscripten_border"><canvas class="emscripten" id="canvas"></canvas></div>
+<p id="status">Downloading...</p>
+<input type="button" value="Fullscreen" onclick="Module.requestFullScreen(true, false)">
+<div class="info">
+  <p>Control notes:</p>
+  <ul>
+    <li>Press any key to start the game.
+    <li>Use arrow keys to move character (up, down, left, right).
+  </ul>
+  <p>General Hint: The game only lasts 5 minutes. If you don't get the point at first, please keep playing.</p>
+  <p>For more details on Passage, see the <a href="http://hcsoftware.sourceforge.net/passage/">Passage website</a>. You can also make donations to the author there.</p>
+  <p>For more details on this Web-based port, see the <a href="https://github.com/toolness/passage-emscripten">GitHub repository</a>.</p>
+</div>
+<script>
+var Module = {
+  preRun: [],
+  postRun: [],
+  print: function(text) {
+    console.log(text);
+  },
+  printErr: function(text) {
+    console.error(text);
+  },
+  canvas: document.getElementById('canvas'),
+  setStatus: function(text) {
+    document.getElementById('status').textContent = text;
+    console.log("SetStatus", text);
+  }
+};
+</script>
+<script async src="Passage.js"></script>

@@ -1,6 +1,11 @@
 This is an attempt to port Jason Rohrer's [Passage][] (2007) to the Web via
 [Emscripten][].
 
+## Very Quick Start
+
+If just want to play the game, you can either visit [passage.toolness.org][] or
+open `dist/index.html` in your browser.
+
 ## Quick Start
 
 First, you will need to [download and install Emscripten][download]. You can
@@ -73,6 +78,7 @@ This port is in the public domain as well.
 
 [Passage]: http://hcsoftware.sourceforge.net/passage/
 [Emscripten]: http://emscripten.org/
+[passage.toolness.org]: http://passage.toolness.org
 [Emterpreter]: https://github.com/kripken/emscripten/wiki/Emterpreter
 [download]: http://kripken.github.io/emscripten-site/docs/getting_started/downloads.html
 [Docker]: http://docker.com/
