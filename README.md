@@ -3,7 +3,7 @@ This is an attempt to port Jason Rohrer's [Passage][] (2007) to the Web via
 
 ## Very Quick Start
 
-If just want to play the game, you can either visit [passage.toolness.org][] or
+If you just want to play the game, you can either visit [passage.toolness.org][] or
 open `dist/index.html` in your browser.
 
 ## Quick Start
