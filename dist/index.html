@@ -21,6 +21,10 @@ body {
   display: block;
 }
 
+canvas {
+  image-rendering: pixelated;
+}
+
 #status {
   min-height: 1.5em;
 }
@@ -28,20 +32,33 @@ body {
 .info {
   text-align: left;
 }
+
+.hidden {
+  display: none;
+}
 </style>
 <title>Passage</title>
 <h1>Passage</h1>
 <p>A video game by <a href="http://hcsoftware.sourceforge.net/jason-rohrer/">Jason Rohrer</a></p>
-<div class="emscripten_border"><canvas class="emscripten" id="canvas"></canvas></div>
-<p id="status">Downloading...</p>
-<input type="button" value="Fullscreen" onclick="Module.requestFullScreen(true, false)">
+<div id="game" class="hidden">
+  <div class="emscripten_border"><canvas class="emscripten" id="canvas"></canvas></div>
+  <p id="status">Downloading...</p>
+  <input type="button" value="Fullscreen" onclick="Module.requestFullScreen(true, false)">
+  <div class="info">
+    <p>Control notes:</p>
+    <ul>
+      <li>Press any key to start the game.
+      <li>Use arrow keys to move character (up, down, left, right).
+    </ul>
+    <p>General Hint: The game only lasts 5 minutes. If you don't get the point at first, please keep playing.</p>
+  </div>
+</div>
+<div id="start">
+  <!-- We need this button or else browsers won't let us create an AudioContext. -->
+  <p><input type="button" value="Start game" autofocus onclick="startGame()"></p>
+  <p><small>Please turn your speakers on (or wear headphones) before playing.</small></p>
+</div>
 <div class="info">
-  <p>Control notes:</p>
-  <ul>
-    <li>Press any key to start the game.
-    <li>Use arrow keys to move character (up, down, left, right).
-  </ul>
-  <p>General Hint: The game only lasts 5 minutes. If you don't get the point at first, please keep playing.</p>
   <p>For more details on Passage, see the <a href="http://hcsoftware.sourceforge.net/passage/">Passage website</a>. You can also make donations to the author there.</p>
   <p>For more details on this Web-based port, see the <a href="https://github.com/toolness/passage-emscripten">GitHub repository</a>.</p>
 </div>
@@ -61,5 +78,13 @@ var Module = {
     console.log("SetStatus", text);
   }
 };
+
+function startGame() {
+  document.getElementById('game').className = '';
+  document.getElementById('start').className = 'hidden';
+
+  var script = document.createElement('script');
+  script.src = "Passage.js";
+  document.body.appendChild(script);
+}
 </script>
-<script async src="Passage.js"></script>
